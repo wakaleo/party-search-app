@@ -8,11 +8,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "test": "vitest --run",
     "test:e2e": "start-server-and-test dev http://localhost:5173 cucumber",
     "cucumber": "cucumber-js --config cucumber.js"
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "axios-mock-adapter": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "reflect-metadata": "^0.2.2"
@@ -21,16 +23,21 @@
     "@cucumber/cucumber": "^11.0.1",
     "@eslint/js": "^9.11.1",
     "@playwright/test": "^1.48.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
+    "@vitest/coverage-c8": "^0.33.0",
     "eslint": "^9.11.1",
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
+    "jsdom": "^25.0.1",
     "playwright": "^1.48.0",
     "start-server-and-test": "^2.0.8",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vitest": "^0.30.0"
   }
 }
